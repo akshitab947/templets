@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fffaf0;
+    text-align: center;
+}
+
+header {
+    background-color: #5c2e1f;
+    color: white;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 35px;
+}
+
+nav {
+    background-color: #d4af37;
+    padding: 15px;
+}
+
+nav a {
+    color: #3b2115;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+}
+
+section {
+    padding: 30px;
+    margin: 15px;
+}
+
+section h2 {
+    color: #7a3e2b;
+}
+
+img {
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.banner {
+    width: 80%;
+    max-width: 900px;
+    height: 300px;
+}
+
+.about-img {
+    width: 300px;
+    height: 200px;
+}
+
+.product {
+    display: inline-block;
+    background-color: #f3dfb8;
+    padding: 15px;
+    margin: 10px;
+    width: 220px;
+    border-radius: 10px;
+    vertical-align: top;
+}
+
+.product img {
+    width: 200px;
+    height: 180px;
+}
+
+.product h3 {
+    color: #5c2e1f;
+}
+
+footer {
+    background-color: #5c2e1f;
+    color: white;
+    padding: 15px;
+}
+@media (max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px 22px;
+    }
+
+    .destination-container,
+    .package-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about {
+        gap: 30px;
+    }
+
+    .about-image img {
+        height: 380px;
+    }
+
+    .features-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 18px 5%;
+    }
+
+    .nav-links {
+        gap: 10px 16px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 500px;
+        padding: 65px 6%;
+    }
+
+    .hero h1 {
+        font-size: 39px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .section {
+        padding: 60px 6%;
+    }
+
+    .section-heading h2,
+    .about-content h2,
+    .contact-content h2 {
+        font-size: 29px;
+    }
+
+    .destination-container,
+    .package-container,
+    .about,
+    .features-container {
+        grid-template-columns: 1fr;
+    }
+
+    .destination-card img,
+    .package-card img {
+        height: 230px;
+    }
+
+    .about-image img {
+        height: 280px;
+    }
+
+    .about {
+        gap: 30px;
+    }
+
+    .package-bottom {
+        flex-wrap: wrap;
+    }
+
+    .footer-links {
+        gap: 15px;
+    }
+}
